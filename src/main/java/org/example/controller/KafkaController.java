@@ -20,7 +20,6 @@ public class KafkaController {
 
     /**
      * Method controller untuk kebutuhan mengirim message apacha kafka
-     *
      * @param body parameter untuk body dari pesan/message
      * @return response entity hasil dari response endpoint API
      */
