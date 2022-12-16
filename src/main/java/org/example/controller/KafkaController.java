@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait kafka
+ * @author Dwi Satria Patra
+ */
 @RestController
 public class KafkaController {
 

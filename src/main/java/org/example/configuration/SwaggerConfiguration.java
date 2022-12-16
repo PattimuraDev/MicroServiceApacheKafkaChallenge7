@@ -7,11 +7,23 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * kelas untuk representasi konfigurasi swagger ui
+ * @author Dwi Satria Patra
+ */
 @Configuration
 public class SwaggerConfiguration {
+
+    /**
+     * Method untuk mengatur konfigurasi swagger dengan OpenAPI versi 3
+     * @param appDescription Deskripsi dari dokumentasi swagger
+     * @param appVersion Keterangan versi dari dokumentasi dengan swagger
+     * @return OpenAPI yang mengatur detail dari dokumentasi swagger
+     */
     @Bean
     public OpenAPI demoApi(@Value("Demo for Challenge 7") String appDescription,
-                           @Value("v1.0.0") String appVersion) {
+                           @Value("v1.0.0") String appVersion
+    ){
         return new OpenAPI()
                 .info(new Info()
                         .title("Patra API")

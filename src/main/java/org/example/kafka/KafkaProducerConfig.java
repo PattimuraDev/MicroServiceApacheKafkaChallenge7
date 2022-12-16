@@ -11,6 +11,10 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * kelas untuk representasi konfigurasi apache kafka producer
+ * @author Dwi Satria Patra
+ */
 @Configuration
 public class KafkaProducerConfig {
 

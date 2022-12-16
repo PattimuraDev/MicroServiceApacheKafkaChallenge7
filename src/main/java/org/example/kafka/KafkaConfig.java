@@ -8,6 +8,10 @@ import org.springframework.kafka.core.KafkaAdmin;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Kelas representasi konfigurasi dari apache kafka
+ * @author Dwi Satria Patra
+ */
 @Configuration
 public class KafkaConfig {
     @Value("${spring.kafka.bootstrap-servers}")
