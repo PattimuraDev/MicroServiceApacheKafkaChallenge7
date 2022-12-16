@@ -21,12 +21,12 @@ public class SwaggerConfiguration {
      * @return OpenAPI yang mengatur detail dari dokumentasi swagger
      */
     @Bean
-    public OpenAPI demoApi(@Value("Demo for Challenge 7") String appDescription,
+    public OpenAPI demoApi(@Value("REST API kafka microservice for challenge chapter 7 backend java Binar Academy") String appDescription,
                            @Value("v1.0.0") String appVersion
     ){
         return new OpenAPI()
                 .info(new Info()
-                        .title("Patra API")
+                        .title("Kafka Microservice Endpoints")
                         .version(appVersion)
                         .description(appDescription)
                         .termsOfService("http://swagger.io/terms")
